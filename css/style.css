@@ -8,16 +8,30 @@
     padding-top: 60px;
 }
 
+/* SIDE BAR */
 
-
-.debug {
-    background-color: red;
+.aside {
+    background-color: #081c34;
     width: 150px;
     height: 100vh;
     position: fixed;
     left:0;
 }
 
+.aside-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.part-one {
+    height: 85%;
+}
+
+.part-two {
+    height: 15%;
+}
+
+Main
 .debug2 {
     background-color: aqua;
 }
