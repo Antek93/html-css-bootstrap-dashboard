@@ -40,8 +40,8 @@
 }
 
 .my-container {
+    width: calc(100% - 150px);
     margin-left: 150px;
-
 }
 
 .color {
@@ -50,11 +50,29 @@
 
 .badge-style {
     background-color: #165bba;
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-size: 10px;
     border-radius: 20px;
 }
 
-.plus {
+/* CORPO DEL MAIN  */
+
+.left-screen {
+    width: 70%;
+}
+
+.right-screen {
+    width: 30%;
+}
+
+@media screen (max-width: 1440px) and (max-width: 768px) {
     
+    .left-screen {
+        width: 100%;
+    }
+    
+    .right-screen {
+        width: 100%;
+    }
+
 }
