@@ -1,0 +1,23 @@
+/* HEADER  */
+
+.size {
+    width: 64vw;
+}
+
+.big-space {
+    padding-top: 60px;
+}
+
+
+
+.debug {
+    background-color: red;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    left:0;
+}
+
+.debug2 {
+    background-color: aqua;
+}
