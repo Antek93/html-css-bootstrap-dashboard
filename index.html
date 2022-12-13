@@ -13,7 +13,7 @@
     
     <header>
         <!-- Contenitore principale HEADER -->
-        <div class="container-fluid fixed-top">
+        <div class="container-fluid fixed-top bg-light">
         <!-- Contenitore in flex -->
             <div class="d-flex justify-content-between align-items-center align-content-center">
         <!-- Prima colonna SINISTRA con LOGO  -->
@@ -23,7 +23,7 @@
                     </div>
                 </div>
         <!-- Seconda colonna CENTRALE con NAV  -->
-                <div>
+                <div class="pt-1">
                     <nav class="navbar">
                          <div class="container-fluid">
                             <form class="d-flex" role="search">
@@ -38,8 +38,49 @@
                     </nav>
                 </div>
         <!-- Terza colonna DESTRA con icone -->
-                <div class="col-2">
-                    ciao
+                <div class="col-1">
+                    <div class="pt-3 ps-1">
+                        <ol class="d-flex justify-content-between list-unstyled me-3">
+                            <li>
+                                <a class="text-decoration-none text-secondary" href="#stat">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-secondary" href="#faq">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                    <button class="btn botton-style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                          </svg>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#stat">Stats</a></li>
+                                      <li><a class="dropdown-item" href="#faq">F.A.Q.</a></li>
+                                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                    </ul>
+                            </li>
+                            <li class="dropdown">
+                                <button class="btn botton-style text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                      </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#stat">Attiva Notifiche</a></li>
+                                  <li><a class="dropdown-item" href="#faq">Disattiva Notifiche</a></li>
+                                  <li><a class="dropdown-item" href="#">Silenzia</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,34 +94,50 @@
         <!-- MENU SUPERIORE ASIDE: HOME STATS e SIGNAL -->
                     <div class="part-one pt-3">
                         <div>
-                            <span class="pe-2">Icon</span>
-                            <span> <a class="text-light text-decoration-none" href="#">Home</a></span>
+                            <span class="pe-2">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                                  </svg>
+                            </span>
+                            <span> <a class="text-light text-decoration-none data" href="#">Home</a></span>
                         </div>
                         <div>
-                            <span class="pe-2">Icon</span>
+                            <span class="pe-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                    <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                                  </svg>
+                            </span>
                             <span> <a class="text-light text-decoration-none" href="#">Stats</a></span>
                         </div>
                         <div>
-                            <span class="pe-2">Icon</span>
+                            <span class="pe-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
+                                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                            </span>
                             <span> <a class="text-light text-decoration-none" href="#">Signals</a></span>
                         </div>
                     </div>
         <!-- MENU INFERIORE ASIDE: ADMIN  -->
                     <div class="part-two">
                         <div>
-                            <span class="pe-2">Icon</span>
-                           <span> <a class="text-light text-decoration-none" href="#">Admin</a></span>
+                            <span class="pe-2">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                                  </svg>
+                            </span>
+                           <span> <a class="text-light text-decoration-none data" href="#">Admin</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         <!-- INIZIO CORPO DELLA PAGINA  -->
             <div class="container-fluid color pb-2">
-                <div class="my-container d-flex align-items-start pt-2 text-light">
+                <div class="my-container d-flex align-items-start pt-2 text-light flex-wrap">
         <!-- SEZIONE BADGE             -->
                      <div class="col-5">
                         <div>
-                            <div> Boolean<span class="badge badge-style ms-3"><a class="text-decoration-none text-light" href="#">Piano Blaze</a></span></div>
+                            <div class="title-size">Boolean<span class="badge badge-style ms-3"><a class="text-decoration-none text-light" href="#">Piano Blaze</a></span></div>
                         </div>
                         <div>
                             <span class="badge badge-style"> <a class="text-decoration-none text-light" href="#">3 app</a></span>
@@ -96,7 +153,7 @@
                         <div>
                             Studenti online negli ultimi 30 minuti
                         </div>
-                        <div>
+                        <div class="title-size">
                             125
                         </div>
                      </div>
@@ -105,12 +162,95 @@
                         <div class="text-end">
                             <span class="pe-2">Nuovo studente</span>
                             <span>
-                                <a class="text-decoration-none text-light" href="#">
+                                <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                                     <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
                                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                                     </svg>
-                                </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end canvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title text-dark" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+        <!-- INIZIO OFF CANVAS  -->
+                                    <div class="offcanvas-body text-dark">
+                                        <div>
+                                            <form>
+                                                <!-- NOME E COGNOME -->
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-3 text-start">
+                                                        <label for="first-name" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="first-name">
+                                                    </div>
+                                                    <div class="mb-3 text-start">
+                                                        <label for="surname" class="form-label">Surname</label>
+                                                        <input type="text" class="form-control" id="surname">
+                                                    </div>
+                                                </div>
+                                                <!-- MAIL E PASSWORD  -->
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-3 text-start">
+                                                            <label for="email" class="form-label">Email</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                    </div>
+                                                    <div class="mb-3 text-start">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="password">
+                                                    </div>
+                                                </div>
+                                                <!-- INDIRIZZO -->
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-3 text-start">
+                                                        <label for="address" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="address">
+                                                    </div>
+                                                </div>
+                                                <!-- CITTA' - STATO - CAP  -->
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-3 text-start">
+                                                        <label for="city" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="city">
+                                                    </div>
+                                                    <div class="mb-3 mx-2 text-start"">
+                                                        <label for="Country" class="form-label px-1">Stato</label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">Italia</option>
+                                                            <option value="2">Spagna</option>
+                                                            <option value="3">Portogallo</option>
+                                                          </select>
+                                                    </div>
+                                                    <div class="mb-3 text-start">
+                                                        <label for="CAP" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="CAP">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-3 text-start">
+                                                            <label for="foto" class="form-label">Foto</label>
+                                                            <div class="input-group">
+                                                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <div class="mb-1">
+                                                        <input type="checkbox" required name="double-check" id="selected">
+                                                        Seleziona per proseguire
+                                                    </div>
+                                                    <div>
+                                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                                        <button type="reset" class="btn btn-emergency">Svuota</button>
+                                                    </div>
+                                                </div>
+                                              </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </span>
                         </div>
                      </div>
@@ -118,8 +258,8 @@
             </div>
         </section>
         <section class="container-fluid d-flex mt-4">
-            <div class="my-container d-flex align-items-start pt-2">
-            <!-- ELEMENTI A SINISTRA -->
+            <div class="my-container d-flex align-items-start flex-wrap pt-2">
+         <!-- ELEMENTI A SINISTRA -->
                 <div class="left-screen mb-4">
                     <div class="title">
                         <h2 class="ms-2">Prossime classi</h2>
@@ -363,7 +503,7 @@
                             </tbody>
                           </table>
                     </div>
-                    <div class="title mt-4">
+                    <div id="faq" class="title mt-4">
                         <h2 class="ms-2">F.A.Q.</h2>
                     </div>
                     <div>
@@ -411,11 +551,79 @@
                     </div>
                 </div>
             <!-- ELEMENTI A DESTRA -->
-                <div class="right-screen">
-                    ciao
+                <div class="ms-4 right-screen">
+                    <div>
+            <!-- TODO  -->
+                        <div class="title">
+                            <h2 class="ms-2">Todo</h2>
+                        </div>
+                        <div class="d-flex flex-column align-items-center container-checklist">
+                            <div class="mt-2 todo-border">
+
+                                <input type="checkbox"> Kickoff su nuove classi
+
+                            </div>
+                            <div class="central-border">
+
+                                <input type="checkbox"> Lezione su Bootstrap 5 in classe #75
+
+                            </div>
+                            <div class="mb-2 todo-border">
+
+                                <input type="checkbox"> Controllare username git-hub studenti
+
+                            </div> 
+                        </div>
+        <!-- STATISTICHE  -->
+                        <div id="stat" class="my-5">
+                            <div class="d-flex flex-column align-items-center stats-container">
+                                <div class="stats-box">
+                                    <img id="stats" src="img/stats.jpeg" alt="">
+                                    <div class="ms-2">
+                                        <div class="fw-semibold fs-5">
+                                            Utenti attivi
+                                        </div>
+                                        <div>
+                                            Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            Gennaio: 1200
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            Febbraio: 800
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            Marzo: 1500
+                                        </div>
+                                        <hr>
+                                        <div class="pb-2">
+                                            <a href="#">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <div class="dropdown">
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
     </main>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
