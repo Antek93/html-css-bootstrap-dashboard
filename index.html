@@ -179,41 +179,41 @@
                                             <form>
                                                 <!-- NOME E COGNOME -->
                                                 <div class="d-flex justify-content-between">
-                                                    <div class="mb-3 text-start">
+                                                    <div class="mb-3 text-start parted">
                                                         <label for="first-name" class="form-label">Name</label>
-                                                        <input type="text" class="form-control" id="first-name">
+                                                        <input name="name" type="text" class="form-control" id="first-name">
                                                     </div>
-                                                    <div class="mb-3 text-start">
+                                                    <div class="mb-3 text-start parted">
                                                         <label for="surname" class="form-label">Surname</label>
-                                                        <input type="text" class="form-control" id="surname">
+                                                        <input name="surname" type="text" class="form-control" id="surname">
                                                     </div>
                                                 </div>
                                                 <!-- MAIL E PASSWORD  -->
                                                 <div class="d-flex justify-content-between">
-                                                    <div class="mb-3 text-start">
+                                                    <div class="mb-3 text-start parted">
                                                             <label for="email" class="form-label">Email</label>
                                                             <div class="input-group mb-3">
                                                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                                                <input id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                                <input name="email" id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                                                             </div>
                                                     </div>
-                                                    <div class="mb-3 text-start">
+                                                    <div class="mb-3 text-start parted">
                                                         <label for="password" class="form-label">Password</label>
-                                                        <input type="password" class="form-control" id="password">
+                                                        <input name="password" type="password" class="form-control" id="password">
                                                     </div>
                                                 </div>
                                                 <!-- INDIRIZZO -->
-                                                <div class="d-flex justify-content-between">
+                                                <div>
                                                     <div class="mb-3 text-start">
                                                         <label for="address" class="form-label">Indirizzo</label>
-                                                        <input type="text" class="form-control" id="address">
+                                                        <input name="indirizzo" type="text" class="form-control" id="address">
                                                     </div>
                                                 </div>
                                                 <!-- CITTA' - STATO - CAP  -->
                                                 <div class="d-flex justify-content-between">
                                                     <div class="mb-3 text-start">
                                                         <label for="city" class="form-label">Città</label>
-                                                        <input type="text" class="form-control" id="city">
+                                                        <input name="città" type="text" class="form-control" id="city">
                                                     </div>
                                                     <div class="mb-3 mx-2 text-start"">
                                                         <label for="Country" class="form-label px-1">Stato</label>
@@ -226,25 +226,25 @@
                                                     </div>
                                                     <div class="mb-3 text-start">
                                                         <label for="CAP" class="form-label">CAP</label>
-                                                        <input type="text" class="form-control" id="CAP">
+                                                        <input name="cap" type="text" class="form-control" id="CAP">
                                                     </div>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <div class="mb-3 text-start">
                                                             <label for="foto" class="form-label">Foto</label>
                                                             <div class="input-group">
-                                                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                                <input name="file" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                                             </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column align-items-start">
                                                     <div class="mb-1">
-                                                        <input type="checkbox" required name="double-check" id="selected">
+                                                        <input name="checkbox" type="checkbox" required name="double-check" id="selected">
                                                         Seleziona per proseguire
                                                     </div>
                                                     <div>
                                                         <button type="submit" class="btn btn-primary">Salva</button>
-                                                        <button type="reset" class="btn btn-emergency">Svuota</button>
+                                                        <button type="reset" class="btn btn-warning">Svuota</button>
                                                     </div>
                                                 </div>
                                               </form>

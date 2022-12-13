@@ -178,6 +178,10 @@
     --bs-offcanvas-width: 555px;
 }
 
+.parted {
+    width: 49%;
+}
+
 
 @media screen and (max-width: 992px) {
     
