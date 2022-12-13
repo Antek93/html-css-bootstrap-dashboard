@@ -1,7 +1,7 @@
 /* HEADER  */
 
 .size {
-    width: 75vw;
+    width: 60vw;
 }
 
 .big-space {
@@ -15,6 +15,7 @@
 }
 
 /* SIDE BAR */
+
 
 .aside {
     background-color: #081c34;
@@ -77,6 +78,9 @@
 
 /* CORPO DEL MAIN  */
 
+.new-student {
+    line-height: 37px;
+}
 
 /* Titolo tabelle  */
 
@@ -104,6 +108,7 @@
 
 .right-screen {
     width: 35%;
+    margin-left: 1.5rem;
 }
 
 /* Immagini e style tabella  */
@@ -112,6 +117,15 @@
     width: 25px;
     height: 25px;
     display: inline-block;
+}
+
+.photo-box {
+    width: 182px;
+    height: 32px;
+}
+
+.photo {
+    width: 100%;
 }
 
 .img-size {
@@ -183,6 +197,7 @@
 }
 
 
+
 @media screen and (max-width: 992px) {
     
     .left-screen {
@@ -191,12 +206,43 @@
 
     .right-screen {
         width: 100%;
+        margin-left: 0;
     }
+
+    .photo-box {
+        width: 68px;
+        height: 69px;
+    }
+
+    .aside {
+        width: 98px;
     
+    }
+
+    .size {
+        width: 55vw;
+    }
+
+    .my-container {
+        width: calc(100% - 98px);
+        margin-left: 98px;
+    }
+
+    .margine {
+        margin-left: 30px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
     
-    
+    .size {
+        width: 50vw;
+    }
+
+    .hidden {
+        display: none;
+    }
+
 }
 

@@ -12,18 +12,19 @@
 <body>
     
     <header>
-        <!-- Contenitore principale HEADER -->
+             <!-- Contenitore principale HEADER -->
         <div class="container-fluid fixed-top bg-light">
-        <!-- Contenitore in flex -->
-            <div class="d-flex justify-content-between align-items-center align-content-center">
-        <!-- Prima colonna SINISTRA con LOGO  -->
-                <div class="col-1">
-                    <div class="img-box">
-                        <img src="img/logo.svg" alt="">
+              <!-- Contenitore in flex -->
+            <div class="row d-flex justify-content-between align-items-center align-content-center">
+                <!-- Prima colonna SINISTRA con LOGO  -->
+                <div class="col-2">
+                    <div class="photo-box">
+                        <img class="d-none d-lg-inline-block photo" src="img/logo.svg" alt="">
+                        <img class="d-lg-none photo" src="img/mobile-logo.png" alt="">
                     </div>
                 </div>
-        <!-- Seconda colonna CENTRALE con NAV  -->
-                <div class="pt-1">
+                 <!-- Seconda colonna CENTRALE con NAV  -->
+                <div class="pt-1 col-8">
                     <nav class="navbar">
                          <div class="container-fluid">
                             <form class="d-flex" role="search">
@@ -37,25 +38,25 @@
                          </div>
                     </nav>
                 </div>
-        <!-- Terza colonna DESTRA con icone -->
-                <div class="col-1">
+                  <!-- Terza colonna DESTRA con icone -->
+                <div class="col-2">
                     <div class="pt-3 ps-1">
                         <ol class="d-flex justify-content-between list-unstyled me-3">
-                            <li>
+                            <li class="d-none d-lg-inline-block">
                                 <a class="text-decoration-none text-secondary" href="#stat">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                                       </svg>
                                 </a>
                             </li>
-                            <li>
+                            <li class="d-none d-lg-inline-block">
                                 <a class="text-decoration-none text-secondary" href="#faq">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
                                       </svg>
                                 </a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown d-none d-lg-inline-block">
                                     <button class="btn botton-style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                                             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
@@ -67,7 +68,7 @@
                                       <li><a class="dropdown-item" href="#">Log Out</a></li>
                                     </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown margine">
                                 <button class="btn botton-style text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
@@ -86,39 +87,39 @@
         </div>
     </header>
     <main>
-        <!--Contenitore principale MAIN -->
-        <section class="big-container d-flex big-space">
-        <!-- COLONNA FISSA LATERALE: ASIDE  -->
+                   <!--Contenitore principale MAIN -->
+     <section class="big-container d-flex big-space">
+                   <!-- COLONNA FISSA LATERALE: ASIDE  -->
             <div class="aside text-light pt-1">
                 <div class="aside-content d-flex flex-column align-items-center">
-        <!-- MENU SUPERIORE ASIDE: HOME STATS e SIGNAL -->
+                    <!-- MENU SUPERIORE ASIDE: HOME STATS e SIGNAL -->
                     <div class="part-one pt-3">
-                        <div>
+                        <div class="d-flex">
                             <span class="pe-2">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                                     <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
                                   </svg>
                             </span>
-                            <span> <a class="text-light text-decoration-none data" href="#">Home</a></span>
+                            <span class="d-none d-lg-inline-block"> <a class="text-light text-decoration-none data" href="#">Home</a></span>
                         </div>
-                        <div>
+                        <div class="d-flex">
                             <span class="pe-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
                                     <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
                                   </svg>
                             </span>
-                            <span> <a class="text-light text-decoration-none" href="#">Stats</a></span>
+                            <span class="d-none d-lg-inline-block"> <a class="text-light text-decoration-none" href="#">Stats</a></span>
                         </div>
-                        <div>
+                        <div class="d-flex">
                             <span class="pe-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
                                     <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
                                   </svg>
                             </span>
-                            <span> <a class="text-light text-decoration-none" href="#">Signals</a></span>
+                            <span class="d-none d-lg-inline-block"> <a class="text-light text-decoration-none" href="#">Signals</a></span>
                         </div>
                     </div>
-        <!-- MENU INFERIORE ASIDE: ADMIN  -->
+                     <!-- MENU INFERIORE ASIDE: ADMIN  -->
                     <div class="part-two">
                         <div>
                             <span class="pe-2">
@@ -126,30 +127,31 @@
                                     <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
                                   </svg>
                             </span>
-                           <span> <a class="text-light text-decoration-none data" href="#">Admin</a></span>
+                           <span class="d-none d-lg-inline-block"> <a class="text-light text-decoration-none data" href="#">Admin</a></span>
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- INIZIO CORPO DELLA PAGINA  -->
+               <!-- INIZIO CORPO DELLA PAGINA  -->
             <div class="container-fluid color pb-2">
-                <div class="my-container d-flex align-items-start pt-2 text-light flex-wrap">
-        <!-- SEZIONE BADGE             -->
-                     <div class="col-5">
+                <div class="row my-container d-flex align-items-start pt-2 text-light flex-wrap phone-size">
+                     <!-- SEZIONE BADGE-->
+                     <div class="col-lg-5 col-md-4 col-sm-12 ">
                         <div>
                             <div class="title-size">Boolean<span class="badge badge-style ms-3"><a class="text-decoration-none text-light" href="#">Piano Blaze</a></span></div>
                         </div>
                         <div>
                             <span class="badge badge-style"> <a class="text-decoration-none text-light" href="#">3 app</a></span>
                             <span>>></span>
-                            <span class="badge badge-style"> <a class="text-decoration-none text-light" href="#">Boolean mobile app</a></span>
-                            <span class="badge badge-style"> <a class="text-decoration-none text-light" href="#">Boolean web app</a></span>
-                            <span class="badge badge-style"> <a class="text-decoration-none text-light" href="#">Boolean blog app</a></span>
+                            <span class="d-none d-lg-inline-block badge badge-style "> <a class="text-decoration-none text-light" href="#">Boolean mobile app</a></span>
+                            <span class="d-none d-lg-inline-block badge badge-style"> <a class="text-decoration-none text-light" href="#">Boolean web app</a></span>
+                            <span class="d-none d-lg-inline-block badge badge-style"> <a class="text-decoration-none text-light" href="#">Boolean blog app</a></span>
+                            <span class="d-lg-none badge badge-style"> <a class="text-decoration-none text-light" href="#">+</a></span>
 
                         </div>
                      </div>
-        <!-- STUDENTI ONLINE NEGLI ULTIMI 30 MINUTI  -->
-                     <div class="col-3">
+                       <!-- STUDENTI ONLINE NEGLI ULTIMI 30 MINUTI  -->
+                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
                             Studenti online negli ultimi 30 minuti
                         </div>
@@ -157,10 +159,10 @@
                             125
                         </div>
                      </div>
-        <!-- SEZIONE NUOVI STUDENTI -->
-                     <div class="col-4">
-                        <div class="text-end">
-                            <span class="pe-2">Nuovo studente</span>
+                        <!-- SEZIONE NUOVI STUDENTI -->
+                     <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="d-lg-flex d-md-flex justify-content-end">
+                            <span class="pe-2 new-student">Nuovo studente</span>
                             <span>
                                 <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                                     <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
@@ -173,7 +175,7 @@
                                         <h5 class="offcanvas-title text-dark" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-        <!-- INIZIO OFF CANVAS  -->
+                                    <!-- INIZIO OFF CANVAS  -->
                                     <div class="offcanvas-body text-dark">
                                         <div>
                                             <form>
@@ -181,11 +183,11 @@
                                                 <div class="d-flex justify-content-between">
                                                     <div class="mb-3 text-start parted">
                                                         <label for="first-name" class="form-label">Name</label>
-                                                        <input name="name" type="text" class="form-control" id="first-name">
+                                                        <input required name="name" type="text" class="form-control" id="first-name">
                                                     </div>
                                                     <div class="mb-3 text-start parted">
                                                         <label for="surname" class="form-label">Surname</label>
-                                                        <input name="surname" type="text" class="form-control" id="surname">
+                                                        <input required name="surname" type="text" class="form-control" id="surname">
                                                     </div>
                                                 </div>
                                                 <!-- MAIL E PASSWORD  -->
@@ -194,30 +196,30 @@
                                                             <label for="email" class="form-label">Email</label>
                                                             <div class="input-group mb-3">
                                                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                                                <input name="email" id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                                <input required name="email" id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                                                             </div>
                                                     </div>
                                                     <div class="mb-3 text-start parted">
                                                         <label for="password" class="form-label">Password</label>
-                                                        <input name="password" type="password" class="form-control" id="password">
+                                                        <input required name="password" type="password" class="form-control" id="password">
                                                     </div>
                                                 </div>
                                                 <!-- INDIRIZZO -->
                                                 <div>
                                                     <div class="mb-3 text-start">
                                                         <label for="address" class="form-label">Indirizzo</label>
-                                                        <input name="indirizzo" type="text" class="form-control" id="address">
+                                                        <input required name="indirizzo" type="text" class="form-control" id="address">
                                                     </div>
                                                 </div>
                                                 <!-- CITTA' - STATO - CAP  -->
                                                 <div class="d-flex justify-content-between">
                                                     <div class="mb-3 text-start">
                                                         <label for="city" class="form-label">Città</label>
-                                                        <input name="città" type="text" class="form-control" id="city">
+                                                        <input required name="città" type="text" class="form-control" id="city">
                                                     </div>
                                                     <div class="mb-3 mx-2 text-start"">
                                                         <label for="Country" class="form-label px-1">Stato</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        <select required class="form-select" aria-label="Default select example">
                                                             <option selected>Scegli...</option>
                                                             <option value="1">Italia</option>
                                                             <option value="2">Spagna</option>
@@ -226,14 +228,14 @@
                                                     </div>
                                                     <div class="mb-3 text-start">
                                                         <label for="CAP" class="form-label">CAP</label>
-                                                        <input name="cap" type="text" class="form-control" id="CAP">
+                                                        <input required name="cap" type="text" class="form-control" id="CAP">
                                                     </div>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <div class="mb-3 text-start">
                                                             <label for="foto" class="form-label">Foto</label>
                                                             <div class="input-group">
-                                                                <input name="file" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                                <input required name="file" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                                             </div>
                                                     </div>
                                                 </div>
@@ -259,7 +261,7 @@
         </section>
         <section class="container-fluid d-flex mt-4">
             <div class="my-container d-flex align-items-start flex-wrap pt-2">
-         <!-- ELEMENTI A SINISTRA -->
+                 <!-- ELEMENTI A SINISTRA -->
                 <div class="left-screen mb-4">
                     <div class="title">
                         <h2 class="ms-2">Prossime classi</h2>
@@ -269,237 +271,271 @@
                             <thead>
                               <tr>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Data Inizio</th>
-                                <th scope="col">ROI</th>
+                                <th class="hidden" scope="col">Data Inizio</th>
+                                <th class="hidden" scope="col">ROI</th>
                                 <th scope="col">Stato</th>
                                 <th scope="col">Azioni</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 75</span>
-                                </th>
-                                <td>15 Feb 2021</td>
-                                <td>20%</td>
-                                <td>Done</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">15 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-success">
+                                            Done
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 76</span>
-                                </th>
-                                <td>16 Feb 2021</td>
-                                <td>20%</td>
-                                <td>Done</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">16 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-success">
+                                            Done
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 77</span>
-                                </th>
-                                <td>17 Feb 2021</td>
-                                <td>20%</td>
-                                <td>process</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">17 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-warning">
+                                            process
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 78</span>
-                                </th>
-                                <td>18 Feb 2021</td>
-                                <td>20%</td>
-                                <td>Done</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">18 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-success">
+                                            Done
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 79</span>
-                                </th>
-                                <td>19 Feb 2021</td>
-                                <td>20%</td>
-                                <td>failed</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">19 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-danger">
+                                            failed
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 80</span>
-                                </th>
-                                <td>20 Feb 2021</td>
-                                <td>20%</td>
-                                <td>Done</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">20 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-success">
+                                            Done
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 81</span>
-                                </th>
-                                <td>21 Feb 2021</td>
-                                <td>20%</td>
-                                <td>failed</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">21 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-danger">
+                                          failed
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div class="img-box">
-                                        <img class="img-size" src="img/class-avatar.jpg" alt="">
-                                    </div>
-                                    <span class="class-style">Classe 82</span>
-                                </th>
-                                <td>22 Feb 2021</td>
-                                <td>20%</td>
-                                <td>Done</td>
-                                <td>
-                                    <span class="border ms-1">
-                                      <a class="text-decoration-none text-dark" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg>
-                                      </a>
-                                    </span>
-                                    <span class="border ms-1">
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="img-box">
+                                            <img class="img-size" src="img/class-avatar.jpg" alt="">
+                                        </div>
+                                        <span class="class-style">Classe 75</span>
+                                    </th>
+                                    <td class="hidden">22 Feb 2021</td>
+                                    <td class="hidden">20%</td>
+                                    <td>
+                                        <div class="badge text-bg-success">
+                                            Done
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="border ms-1">
                                         <a class="text-decoration-none text-dark" href="#">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                             </svg>
                                         </a>
-                                    </span>
-                                </td>
-                              </tr>
+                                        </span>
+                                        <span class="border ms-1">
+                                            <a class="text-decoration-none text-dark" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                              
+                              
                             </tbody>
                           </table>
                     </div>
@@ -550,10 +586,10 @@
                           </div>
                     </div>
                 </div>
-            <!-- ELEMENTI A DESTRA -->
-                <div class="ms-4 right-screen">
+                <!-- ELEMENTI A DESTRA -->
+                <div class="right-screen">
                     <div>
-            <!-- TODO  -->
+                         <!-- TODO  -->
                         <div class="title">
                             <h2 class="ms-2">Todo</h2>
                         </div>
@@ -574,7 +610,7 @@
 
                             </div> 
                         </div>
-        <!-- STATISTICHE  -->
+                          <!-- STATISTICHE  -->
                         <div id="stat" class="my-5">
                             <div class="d-flex flex-column align-items-center stats-container">
                                 <div class="stats-box">
